@@ -1,0 +1,273 @@
+/* * holo universal selector */
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color:black;
+    width: 340px;
+    border-radius: 1rem; /* 1 rem=16px*/
+}
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 1rem 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 8px 0.5rem;
+}
+.nav-option:hover {
+    /* er jonno jate home er opacity change na hoi tar jnno html e home style e opacity 1 kore dite hbe */
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.lib-box{
+    height: 100%;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+}
+.lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+    align-items: center;
+}
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+    
+}
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rm;
+    padding: 0.5rem 0.5rem;
+
+}
+.icons i{
+    opacity: 1;
+}
+.box{
+    background-color: #232323;
+    height: 9rem;
+    border-radius: 0.75rem;
+    margin: 0.5rem 0 1.75rem 0;
+    padding: 1.5rem 0.75rem;
+}
+.box-p1{
+    background-color: #232323;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.75rem;
+}
+.box-p2{
+    background-color: #232323;
+    opacity: 0.9;
+    font-size: 0.85rem;
+    padding: 0.75rem;
+}
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    color: black;
+    margin: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+
+}
+.dark-badge{
+    background-color: black;
+    color: white;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0 ;
+    z-index: 10;
+}
+.sticky-nav-icon img{
+    background-color: #121212;
+    margin-left: 2rem;
+}
+.sticky-nav-options{
+    display: flex;
+    background-color: #121212;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.nav-item{
+    margin-right: 1rem;
+}
+
+/* 1000px er niche > ar 1st btn vanish hoye jbe */
+@media(max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+
+/* card gulor design */
+
+.cards-container{
+    
+    display: flex;
+    flex-wrap: wrap;
+   background-color: #121212;
+    width: fit-content;
+
+
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+
+}
+.card{
+    
+    background-color: #121212;
+}
+.card-title{
+    background-color:#232323;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+.card-info{
+    background-color:#232323;
+    font-size: 0.85rem;
+    font-weight: 300;
+
+}
+.main-content h2{
+    background-color: #121212;
+    padding-bottom: 1rem;
+}
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 1rem 1.5rem 0 1.5rem;
+}
+.card{
+    background-color:#232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    
+}
+.footer{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 50%;
+
+    border-top: 1px solid white;
+    opacity: 0.5;
+}
+
+/* Music player */
+
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.album{
+    width: 25%;
+    
+}
+.player{
+    width: 50%;
+    background-color: rgb(74, 55, 19);
+}
+.controls{
+    width: 25%;
+}
+   
+.player-contro-icon{
+    height: 1.5rem;
+    padding: 0.5rem;
+    opacity: 0.5;
+    
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.player-contro-icon:hover{
+    opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
